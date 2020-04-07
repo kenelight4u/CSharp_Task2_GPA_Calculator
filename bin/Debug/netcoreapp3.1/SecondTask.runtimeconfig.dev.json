@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Ekene\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Ekene\\.nuget\\packages"
+    ]
+  }
+}

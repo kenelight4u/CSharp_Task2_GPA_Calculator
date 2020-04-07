@@ -1,0 +1,13 @@
+C:\Users\Ekene\Csharp\SecondTask\bin\Debug\netcoreapp3.1\SecondTask.exe
+C:\Users\Ekene\Csharp\SecondTask\bin\Debug\netcoreapp3.1\SecondTask.deps.json
+C:\Users\Ekene\Csharp\SecondTask\bin\Debug\netcoreapp3.1\SecondTask.runtimeconfig.json
+C:\Users\Ekene\Csharp\SecondTask\bin\Debug\netcoreapp3.1\SecondTask.runtimeconfig.dev.json
+C:\Users\Ekene\Csharp\SecondTask\bin\Debug\netcoreapp3.1\SecondTask.dll
+C:\Users\Ekene\Csharp\SecondTask\bin\Debug\netcoreapp3.1\SecondTask.pdb
+C:\Users\Ekene\Csharp\SecondTask\obj\Debug\netcoreapp3.1\SecondTask.csprojAssemblyReference.cache
+C:\Users\Ekene\Csharp\SecondTask\obj\Debug\netcoreapp3.1\SecondTask.csproj.CoreCompileInputs.cache
+C:\Users\Ekene\Csharp\SecondTask\obj\Debug\netcoreapp3.1\SecondTask.AssemblyInfoInputs.cache
+C:\Users\Ekene\Csharp\SecondTask\obj\Debug\netcoreapp3.1\SecondTask.AssemblyInfo.cs
+C:\Users\Ekene\Csharp\SecondTask\obj\Debug\netcoreapp3.1\SecondTask.dll
+C:\Users\Ekene\Csharp\SecondTask\obj\Debug\netcoreapp3.1\SecondTask.pdb
+C:\Users\Ekene\Csharp\SecondTask\obj\Debug\netcoreapp3.1\SecondTask.genruntimeconfig.cache
