@@ -35,7 +35,7 @@ Console.WriteLine("WELCOME TO 100LEVEL GPA CALCULATOR, GRADES ARE AS FOLLOW \nSC
             // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
             // myGrade = Console.ReadLine();
             myGrade = myGrades(point);
-            CoursesGrades.Add("GST 111 " + myGrade);
+            CoursesGrades.Add("GST 111  " + myGrade);
             int nGST_111 = GST_111 * point;
             
             Console.Write("Enter your GST 112 Score Here: ");
@@ -44,7 +44,7 @@ Console.WriteLine("WELCOME TO 100LEVEL GPA CALCULATOR, GRADES ARE AS FOLLOW \nSC
             // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
             // myGrade = Console.ReadLine();
             myGrade = myGrades(point);
-            CoursesGrades.Add("GST 112 " + myGrade);
+            CoursesGrades.Add("GST 112  " + myGrade);
             int nGST_112 = GST_112 * point;
 
             Console.Write("Enter your MTH 110 Score Here: ");
@@ -53,7 +53,7 @@ Console.WriteLine("WELCOME TO 100LEVEL GPA CALCULATOR, GRADES ARE AS FOLLOW \nSC
             // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
             // myGrade = Console.ReadLine(); 
             myGrade = myGrades(point);
-            CoursesGrades.Add("MTH 110 " + myGrade);  
+            CoursesGrades.Add("MTH 110  " + myGrade);  
             int nMTH_110 = MTH_110 * point;
 
             Console.Write("Enter your MTH 112 Score Here: ");
@@ -62,7 +62,7 @@ Console.WriteLine("WELCOME TO 100LEVEL GPA CALCULATOR, GRADES ARE AS FOLLOW \nSC
             // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
             // myGrade = Console.ReadLine();
             myGrade = myGrades(point);
-            CoursesGrades.Add("MTH 112 " + myGrade);
+            CoursesGrades.Add("MTH 112  " + myGrade);
             int nMTH_112 = MTH_112 * point;
             
             Console.Write("Enter your CHM 111 Score Here: ");
@@ -71,7 +71,7 @@ Console.WriteLine("WELCOME TO 100LEVEL GPA CALCULATOR, GRADES ARE AS FOLLOW \nSC
             // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
             // myGrade = Console.ReadLine();//
             myGrade = myGrades(point);
-            CoursesGrades.Add("CHM 111 " + myGrade);
+            CoursesGrades.Add("CHM 111  " + myGrade);
             int nCHM_111 = CHM_111 * point;
 
             Console.Write("Enter your CHM 113 Score Here: ");
@@ -80,7 +80,7 @@ Console.WriteLine("WELCOME TO 100LEVEL GPA CALCULATOR, GRADES ARE AS FOLLOW \nSC
             // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
             // myGrade = Console.ReadLine();
             myGrade = myGrades(point);
-            CoursesGrades.Add("CHM 113 " + myGrade); 
+            CoursesGrades.Add("CHM 113  " + myGrade); 
             int nCHM113 = CHM_113 * point;
 
             Console.Write("Enter your PHY 101 Score Here: ");
@@ -89,7 +89,7 @@ Console.WriteLine("WELCOME TO 100LEVEL GPA CALCULATOR, GRADES ARE AS FOLLOW \nSC
             // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
             // myGrade = Console.ReadLine();
             myGrade = myGrades(point);
-            CoursesGrades.Add("PHY 101 " + myGrade);
+            CoursesGrades.Add("PHY 101  " + myGrade);
             int nPHY_101 = PHY_101 * point;
             
             Console.Write("Enter your PHY 111 Score Here: ");
@@ -98,7 +98,7 @@ Console.WriteLine("WELCOME TO 100LEVEL GPA CALCULATOR, GRADES ARE AS FOLLOW \nSC
             // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
             // myGrade = Console.ReadLine();
             myGrade = myGrades(point);
-            CoursesGrades.Add("PHY 111 " + myGrade);
+            CoursesGrades.Add("PHY 111  " + myGrade);
             int nPHY_111 = PHY_111 * point;
 
             Console.Write("Enter your PHY 113 Score Here: ");
@@ -107,7 +107,7 @@ Console.WriteLine("WELCOME TO 100LEVEL GPA CALCULATOR, GRADES ARE AS FOLLOW \nSC
             // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
             // myGrade = Console.ReadLine();
             myGrade = myGrades(point);
-            CoursesGrades.Add("PHY 113 " + myGrade); 
+            CoursesGrades.Add("PHY 113  " + myGrade); 
             int nPHY_113 = PHY_113 * point;
 
             Console.WriteLine("\n");
@@ -175,7 +175,7 @@ Console.WriteLine("WELCOME TO 100LEVEL GPA CALCULATOR, GRADES ARE AS FOLLOW \nSC
         }
         static char myGrades (int pointCheck)
         {
-            char grade;
+            char grade = 'S';
 
             switch (pointCheck)
             {
