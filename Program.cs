@@ -10,7 +10,11 @@ namespace SecondTask
         {
             //THIS IS A GPA CALCULATOR FOR 100 LEVEL STUDENT WAITING FOR PROMOTION, OFFERED NINE COURSES
             //I WENT FURTHER TO READ UP METHOD IN OTHER FOR MY CODE TO BE CONCISE, PARDON ME!!!
-            int score = 0; int point = 0; double GPA = 0; string myGrade;
+            //the one I submitted myGrade was string and I asked user to type in their grades by looking at the grade range popped up firstly
+            //Also I added another method called myGrades
+
+             int score = 0; int point = 0; double GPA = 0; char myGrade;
+
 
             // Courses with their Credit Loads
             int GST_111 = 2; int GST_112 = 2; int MTH_110 = 3; int MTH_112 = 3; int CHM_111 = 3; 
@@ -28,72 +32,81 @@ Console.WriteLine("WELCOME TO 100LEVEL GPA CALCULATOR, GRADES ARE AS FOLLOW \nSC
             Console.Write("Enter your GST 111 Score Here: ");
             score = int.Parse(Console.ReadLine());
             point = myPointCal(score);
-            Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
-            myGrade = Console.ReadLine();
+            // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
+            // myGrade = Console.ReadLine();
+            myGrade = myGrades(point);
             CoursesGrades.Add("GST 111 " + myGrade);
             int nGST_111 = GST_111 * point;
             
             Console.Write("Enter your GST 112 Score Here: ");
             score = int.Parse(Console.ReadLine());
             point = myPointCal(score);
-            Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
-            myGrade = Console.ReadLine();
+            // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
+            // myGrade = Console.ReadLine();
+            myGrade = myGrades(point);
             CoursesGrades.Add("GST 112 " + myGrade);
             int nGST_112 = GST_112 * point;
 
             Console.Write("Enter your MTH 110 Score Here: ");
             score = int.Parse(Console.ReadLine());
             point = myPointCal(score); 
-            Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
-            myGrade = Console.ReadLine(); 
+            // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
+            // myGrade = Console.ReadLine(); 
+            myGrade = myGrades(point);
             CoursesGrades.Add("MTH 110 " + myGrade);  
             int nMTH_110 = MTH_110 * point;
 
             Console.Write("Enter your MTH 112 Score Here: ");
             score = int.Parse(Console.ReadLine());
             point = myPointCal(score);
-            Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
-            myGrade = Console.ReadLine();
+            // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
+            // myGrade = Console.ReadLine();
+            myGrade = myGrades(point);
             CoursesGrades.Add("MTH 112 " + myGrade);
             int nMTH_112 = MTH_112 * point;
             
             Console.Write("Enter your CHM 111 Score Here: ");
             score = int.Parse(Console.ReadLine());
             point = myPointCal(score);
-            Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
-            myGrade = Console.ReadLine();
+            // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
+            // myGrade = Console.ReadLine();//
+            myGrade = myGrades(point);
             CoursesGrades.Add("CHM 111 " + myGrade);
             int nCHM_111 = CHM_111 * point;
 
             Console.Write("Enter your CHM 113 Score Here: ");
             score = int.Parse(Console.ReadLine());
             point = myPointCal(score);   
-            Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
-            myGrade = Console.ReadLine();
+            // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
+            // myGrade = Console.ReadLine();
+            myGrade = myGrades(point);
             CoursesGrades.Add("CHM 113 " + myGrade); 
             int nCHM113 = CHM_113 * point;
 
             Console.Write("Enter your PHY 101 Score Here: ");
             score = int.Parse(Console.ReadLine());
             point = myPointCal(score);
-            Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
-            myGrade = Console.ReadLine();
+            // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
+            // myGrade = Console.ReadLine();
+            myGrade = myGrades(point);
             CoursesGrades.Add("PHY 101 " + myGrade);
             int nPHY_101 = PHY_101 * point;
             
             Console.Write("Enter your PHY 111 Score Here: ");
             score = int.Parse(Console.ReadLine());
             point = myPointCal(score);
-            Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
-            myGrade = Console.ReadLine();
+            // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
+            // myGrade = Console.ReadLine();
+            myGrade = myGrades(point);
             CoursesGrades.Add("PHY 111 " + myGrade);
             int nPHY_111 = PHY_111 * point;
 
             Console.Write("Enter your PHY 113 Score Here: ");
             score = int.Parse(Console.ReadLine());
             point = myPointCal(score);   
-            Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
-            myGrade = Console.ReadLine();
+            // Console.Write("Enter the Course GRADE (IN CAP) as seen Above: ");
+            // myGrade = Console.ReadLine();
+            myGrade = myGrades(point);
             CoursesGrades.Add("PHY 113 " + myGrade); 
             int nPHY_113 = PHY_113 * point;
 
@@ -159,6 +172,30 @@ Console.WriteLine("WELCOME TO 100LEVEL GPA CALCULATOR, GRADES ARE AS FOLLOW \nSC
                 {
                     return 1;
                 }  
+        }
+        static char myGrades (int pointCheck)
+        {
+            char grade;
+
+            switch (pointCheck)
+            {
+                case 5:
+                    grade = 'A';
+                    break;
+                case 4:
+                    grade = 'B';
+                    break;
+                case 3:
+                    grade = 'C';
+                    break;
+                case 2:
+                    grade = 'D';
+                    break;
+                case 1:
+                    grade = 'F';
+                    break;    
+            }
+            return grade;        
         }
         
     }
